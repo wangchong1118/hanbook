@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" style="height: 100%;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./static/css/style.css" />
+    <title>账户注册</title>
+</head>
+<body style="height: 100%;">
+<div class="fullpage pos-r">
+    <div class="float-box">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title text-center">注册</h3>
+            </div>
+            <div class="panel-body">
+                <form method="POST" action="reg.php" class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">账号：</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" name="uname" placeholder="输入账户名称">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">密码：</label>
+                        <div class="col-sm-9">
+                            <input type="password" class="form-control" name="upass" placeholder="输入账户密码">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">确认密码：</label>
+                        <div class="col-sm-9">
+                            <input type="password" class="form-control" name="upass2" placeholder="再次输入账户密码">
+                        </div>
+                    </div>
+                    <div class="form-group mg-top-24">
+                        <div class="col-sm-3"></div>
+                        <div class="col-sm-5">
+                            <input type="hidden" name="token" value="upload">
+                            <input type="submit" class="form-control btn btn-danger" value="注册">
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="./login.html" class="form-control btn btn-success">我有账户</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
